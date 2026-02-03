@@ -15,7 +15,7 @@
   --main-light: #2c5282;
   --secondary: #4a5568;     /* Slate Gray */
   --accent: #d69e2e;        /* Golden Accent from reference */
-  --bg: #f8fafc;
+  --bg: #ffffff;
   --glass-bg: rgba(255, 255, 255, 0.8);
   --glass-border: rgba(0, 0, 0, 0.1);
 }
@@ -218,9 +218,13 @@ section.subTitle h2 {
 }
 
 /* SubTitle Overrides */
+section.subTitle {
+  background-color: var(--secondary);
+}
+
 section.subTitle::after {
   background-color: white;
-  color: var(--main);
+  color: var(--secondary);
 }
 
 /* Specific Components */

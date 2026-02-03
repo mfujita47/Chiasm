@@ -15,6 +15,7 @@
   --main: #2C55C9;
   --secondary: #3d3d3d;
   --accent: #ff0051;
+  --bg: #ffffff;
 }
 
 * {
@@ -24,7 +25,7 @@
 
 section {
   position: relative;
-  background-color: #ffffff;
+  background-color: var(--bg);
   font-size: 2rem;
   padding: 96px 32px 42px 32px;
 }
