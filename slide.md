@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: canyon
+theme: chiasm
 paginate: true
 ---
 <!-- _class: title-->
