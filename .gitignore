@@ -1,0 +1,11 @@
+# Marp output
+*.pdf
+*.html
+*.pptx
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
