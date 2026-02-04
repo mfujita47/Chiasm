@@ -32,7 +32,7 @@ section {
   font-size: 28px;
   line-height: 1.6;
   letter-spacing: 0.02em;
-  padding: 96px 32px 42px 32px;
+  padding: 104px 32px 42px 32px;
 }
 
 h1:nth-of-type(1) {
@@ -112,6 +112,22 @@ h6 {
 
 h2 {
   color: var(--main);
+  border-left: solid 5px var(--accent);
+  padding-left: 12px;
+  margin-top: 0.5em;
+  line-height: 1.2;
+}
+
+a {
+  color: var(--main);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s;
+}
+
+a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
 }
 
 h3,
