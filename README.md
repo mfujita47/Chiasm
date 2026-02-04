@@ -58,6 +58,14 @@ paginate: true
 
 詳細な使い方は、[chiasm-usage-guide.md](./chiasm-usage-guide.md) または、それを PDF 出力した [chiasm-usage-guide.pdf](./chiasm-usage-guide.pdf) を参照してください。
 
+## 🤖 AI によるスライド生成
+
+付属の [chiasm-generation-prompt.md](./chiasm-generation-prompt.md) を LLM（ChatGPT, Claude 等）のプロンプトとして使用することで、Chiasm テーマに最適なスライド構成を自動生成できます。
+
+1.  `chiasm-generation-prompt.md` の内容をコピーして AI に貼り付けます。
+2.  スライドにしたい内容や構成案を AI に伝えます。
+3.  AI が Chiasm の 2 段組みレイアウトやコンポーネントを駆使した Markdown コードを出力します。
+
 ## 🛠️ Canyon との主な違い
 
 - 📐 **レイアウトの最適化**: 2段組み時の余白や境界線の調整。
