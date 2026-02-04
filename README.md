@@ -1,5 +1,4 @@
-# 🎨 Chiasm (Marp Theme): Information-Rich Presentation Style
-
+# 🎨 Chiasm - Marp Theme (v1.0.0)
 **Chiasm** は、情報の密度と視覚的な洗練さを両立させた Marp 用のカスタムテーマです。
 [Jzurde](https://github.com/Jzurde) 氏による [Canyon](https://github.com/Jzurde/canyon) テーマの設計思想を継承し、さらに洗練されたレイアウトとコンポーネントを追加した改良版です。
 
