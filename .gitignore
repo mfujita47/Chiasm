@@ -1,5 +1,6 @@
 # Marp output
 *.pdf
+!chiasm-usage-guide.pdf
 *.html
 *.pptx
 
