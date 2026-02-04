@@ -54,11 +54,11 @@ paginate: true
 </div>
 ```
 
-詳細は [使用ガイド (.md)](./chiasm-usage-guide.md) または [PDF版](./chiasm-usage-guide.pdf) を参照してください。基本的な使い方は [オリジナル (Canyon) のドキュメント](https://github.com/Jzurde/canyon/tree/main) も参考になります。
+詳細は [使用ガイド (.md)](./chiasm-usage-guide.md) または [PDF版](./chiasm-usage-guide.pdf) を参照してください。基本的な使い方は [オリジナル (Canyon) 版](https://github.com/Jzurde/canyon/) に準拠しています。
 
 ## 🤖 AI によるスライド生成
 
-付属の [chiasm-generation-prompt.md](./chiasm-generation-prompt.md) を LLM（ChatGPT, Claude 等）のプロンプトとして使用することで、Chiasm テーマに最適なスライド構成を自動生成できます。
+付属の [chiasm-generation-prompt.md](https://raw.githubusercontent.com/mfujita47/Chiasm/refs/heads/main/chiasm-generation-prompt.md) を LLM（ChatGPT, Claude 等）のプロンプトとして使用することで、Chiasm テーマに最適なスライド構成を自動生成できます。
 
 1.  `chiasm-generation-prompt.md` の内容をコピーして AI に貼り付けます。
 2.  スライドにしたい内容や構成案を AI に伝えます。
