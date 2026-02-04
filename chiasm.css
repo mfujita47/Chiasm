@@ -48,11 +48,6 @@ h1:nth-of-type(1) {
   align-items: center;
   border-bottom: solid 3px var(--main);
   padding: 0 32px;
-  background: linear-gradient(
-    to right,
-    color-mix(in srgb, var(--main), transparent 95%),
-    transparent
-  );
 }
 
 h1:nth-of-type(1)::before {
@@ -232,7 +227,7 @@ section.subTitle::after {
 .box {
   padding: 24px 24px 24px 40px;
   position: relative;
-  background: var(--box-bg, var(--glass-bg));
+  background: var(--box-bg, rgba(0, 0, 0, 0.03));
   backdrop-filter: blur(10px);
   border: 1px solid var(--glass-border);
   border-radius: 12px;
