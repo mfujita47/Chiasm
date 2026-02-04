@@ -64,12 +64,6 @@ paginate: true
 2.  スライドにしたい内容や構成案を AI に伝えます。
 3.  AI が Chiasm の 2 段組みレイアウトやコンポーネントを駆使した Markdown コードを出力します。
 
-## 🛠️ Canyon との主な違い
-
-- **レイアウトの最適化**: 2段組み時の余白や境界線の調整。
-- **コンポーネントの追加**: 矢印（uparrow, downarrow）や、ボックススタイルの拡充。
-- **デザインの微調整**: 文字サイズ、行間、コントラストの最適化による可読性の向上。
-
 ## 🧑‍💻 作者
 
 - **mfujita47 (Mitsugu Fujita)** - [https://github.com/mfujita47](https://github.com/mfujita47)
