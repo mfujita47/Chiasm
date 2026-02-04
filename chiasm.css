@@ -13,7 +13,7 @@
 :root {
   --main: #1a365d;          /* Professional Deep Blue */
   --main-light: #2c5282;
-  --secondary: #4a5568;     /* Slate Gray */
+  --secondary: #3d3d3d;     /* Slate Gray */
   --accent: #d69e2e;        /* Golden Accent from reference */
   --bg: #ffffff;
   --glass-bg: rgba(255, 255, 255, 0.8);
@@ -23,6 +23,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  box-shadow: none !important;
 }
 
 section {
@@ -237,7 +238,6 @@ section.subTitle>h1:nth-of-type(1)::after {
   backdrop-filter: blur(10px);
   border: 1px solid var(--glass-border);
   border-radius: 12px;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
   overflow: hidden;
 }
 
@@ -302,7 +302,7 @@ code {
   background-color: rgba(0, 0, 0, 0.05);
   padding: 2px 6px;
   border-radius: 4px;
-  font-family: "Source Code Pro", monospace;
+  font-family: "UDEV Gothic NFLG", "Source Code Pro", monospace;
 }
 
 mark {
@@ -313,7 +313,7 @@ mark {
 }
 
 ul {
-  padding: 0 40px;
+  padding: 0 32px;
 }
 
 img[alt~="border"] {
@@ -327,12 +327,10 @@ img[alt~="center"] {
 }
 
 pre {
-  font-family: "Source Code Pro", monospace;
-  font-size: 0.8em;
-  background-color: #1a202c;
-  color: #edf2f7;
-  padding: 20px;
-  border-radius: 8px;
-  overflow: auto;
-  border: 1px solid rgba(255,255,255,0.1);
+  font-family: "UDEV Gothic NFLG", "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 1.5rem;
+  background-color: #3d3d3d;
+  color: white;
 }
