@@ -54,7 +54,7 @@ paginate: true
 </div>
 ```
 
-詳細は [使用ガイド (.md)](./chiasm-usage-guide.md) または [PDF版](./chiasm-usage-guide.pdf) を参照してください。
+詳細は [使用ガイド (.md)](./chiasm-usage-guide.md) または [PDF版](./chiasm-usage-guide.pdf) を参照してください。基本的な使い方は [オリジナル (Canyon) のドキュメント](https://github.com/Jzurde/canyon/tree/main) も参考になります。
 
 ## 🤖 AI によるスライド生成
 
