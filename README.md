@@ -1,6 +1,4 @@
-# 🎨 Chiasm - Marp Theme (v1.0.0)
-**Chiasm** は、情報の密度と視覚的な洗練さを両立させた Marp 用のカスタムテーマです。
-[Jzurde](https://github.com/Jzurde) 氏による [Canyon](https://github.com/Jzurde/canyon) テーマの設計思想を継承し、さらに洗練されたレイアウトとコンポーネントを追加した改良版です。
+**Chiasm** は、[Jzurde](https://github.com/Jzurde) 氏の [Canyon](https://github.com/Jzurde/canyon) テーマを、[mfujita47](https://github.com/mfujita47) 好みにカスタマイズした Marp 用テーマです。情報の密度と視覚的な読みやすさを重視しています。
 
 ## ✨ 特徴
 
@@ -9,12 +7,12 @@
   - **Color Boxes**: 4色（青、緑、黄、赤）の強調ボックス。
   - **Tags**: 分類や重要度を示すためのラベル。
   - **Arrows**: 流れや推論を示すための矢印。
-- **洗練されたタイポグラフィ**: Inter と BIZ UDPGothic を組み合わせた、読みやすくプロフェッショナルなフォント選定。
-- **自動ページネーション**: ヘッダーとフッターに洗練されたデザインのページ番号を表示。
+- **洗練されたタイポグラフィ**: BIZ UDPGothic をベースとした、読みやすいフォント選定。
+- **自動ページネーション**: ヘッダーとフッターにわかりやすいページ番号を表示。
 
 ## 🚀 インストール
 
-Marp の設定（VS Code の `settings.json` など）で、カスタムテーマとして以下の URL を登録してください。
+Marp の設定（VS Code の `settings.json` など）に、以下を追加してください。
 
 ```json
 "markdown.marp.themes": [
@@ -56,7 +54,7 @@ paginate: true
 </div>
 ```
 
-詳細な使い方は、[chiasm-usage-guide.md](./chiasm-usage-guide.md) または、それを PDF 出力した [chiasm-usage-guide.pdf](./chiasm-usage-guide.pdf) を参照してください。
+詳細は [使用ガイド (.md)](./chiasm-usage-guide.md) または [PDF版](./chiasm-usage-guide.pdf) を参照してください。
 
 ## 🤖 AI によるスライド生成
 
@@ -69,8 +67,8 @@ paginate: true
 ## 🛠️ Canyon との主な違い
 
 - **レイアウトの最適化**: 2段組み時の余白や境界線の調整。
-- **コンポーネントの追加**: 矢印（uparrow, downarrow）や、より詳細なボックススタイルの追加。
-- **デザインの微調整**: 文字サイズ、行間、色のコントラストなど、プレゼンテーションの可読性をさらに向上させました。
+- **コンポーネントの追加**: 矢印（uparrow, downarrow）や、ボックススタイルの拡充。
+- **デザインの微調整**: 文字サイズ、行間、コントラストの最適化による可読性の向上。
 
 ## 🧑‍💻 作者
 
