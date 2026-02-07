@@ -318,7 +318,7 @@ ul {
 }
 
 img[alt~="border"] {
-  border: solid 2px var(--glass-border);
+  border: solid 3px var(--glass-border);
   border-radius: 8px;
 }
 
