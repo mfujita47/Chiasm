@@ -46,7 +46,7 @@ h1:nth-of-type(1) {
   font-weight: 800;
   display: flex;
   align-items: center;
-  border-bottom: solid 3px var(--main);
+  border-bottom: solid 1.5px var(--main);
   padding: 0 32px;
 }
 
@@ -136,7 +136,7 @@ section.twoColumns > div {
 }
 
 section.twoColumns > div:nth-of-type(1) {
-  border-right: solid 3px var(--main);
+  border-right: solid 1.5px var(--main);
   padding-right: 32px;
 }
 
