@@ -1,3 +1,5 @@
+# 🎨 Chiasm: Modern Marp Theme for Information-Dense Slides (v1.1.0)
+
 **Chiasm** は、[Jzurde](https://github.com/Jzurde) 氏の [Canyon](https://github.com/Jzurde/canyon) テーマを、[mfujita47](https://github.com/mfujita47) 好みにカスタマイズした Marp 用テーマです。情報の密度と視覚的な読みやすさを重視しています。
 
 ## ✨ 特徴
