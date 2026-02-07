@@ -132,7 +132,7 @@ section.twoColumns {
 
 section.twoColumns > div {
   width: 50%;
-  padding-top: 52px;
+  padding-top: 32px;
 }
 
 section.twoColumns > div:nth-of-type(1) {

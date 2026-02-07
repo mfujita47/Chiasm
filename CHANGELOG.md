@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Unified the thickness of major structural lines to `1.5px` for a more consistent and refined appearance.
   - Affected elements: `h1` underlines (standard and title), 2-column vertical dividers, and image borders.
+- Removed the gap above the vertical divider in 2-column slides by adjusting padding.
 
 
 ## [1.0.0] - 2026-02-04
