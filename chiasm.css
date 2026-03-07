@@ -218,7 +218,7 @@ section.subTitle::after {
   padding: 24px 24px 24px 40px;
   position: relative;
   background: var(--box-bg, rgba(0, 0, 0, 0.03));
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); -> causes rendering issues in SVG foreignObject on Chromium browsers */
   border: 1px solid var(--glass-border);
   border-radius: 12px;
   overflow: hidden;
