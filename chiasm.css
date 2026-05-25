@@ -1,6 +1,6 @@
 /* @theme chiasm */
 @import "default";
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=BIZ+UDPGothic:wght@400;700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=BIZ+UDPGothic:wght@400;700&family=Source+Code+Pro:ital,wght=0,200..900;1,200..900&display=swap");
 
 .area {
   width: 100%;
@@ -19,20 +19,25 @@
   --glass-border: rgba(0, 0, 0, 0.1);
 }
 
-* {
+/* 改善: Mermaidなどのサードパーティ要素を破壊しないよう、影響範囲を限定 */
+section, section div, section p, section ul, section ol, section li {
   box-sizing: border-box;
-  margin: 0;
-  box-shadow: none !important;
 }
 
 section {
   position: relative;
   background-color: var(--bg);
-  font-family: "FORM UDPGothic", "BIZ UDPGothic", sans-serif !important;
+  font-family: "FORM UDPGothic", "BIZ UDPGothic", sans-serif; /* 改善: !important を削除してMermaid内の文字計算を保護 */
   font-size: 28px;
   line-height: 1.6;
   letter-spacing: 0.02em;
   padding: 96px 32px 42px 32px;
+}
+
+/* 改善: 全要素リセットではなく、個別要素に対して安全にマージンとシャドウをリセット */
+section h1, section h2, section h3, section h4, section h5, section h6, section p, section ul, section ol {
+  margin: 0;
+  box-shadow: none;
 }
 
 h1:nth-of-type(1) {
@@ -91,11 +96,7 @@ section::after {
   border-radius: 16px;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
@@ -115,10 +116,7 @@ a:hover {
   border-bottom-color: var(--accent);
 }
 
-h3,
-h4,
-h5,
-h6 {
+h3, h4, h5, h6 {
   color: var(--secondary);
 }
 
@@ -208,17 +206,13 @@ section.subTitle::after {
 
 /* Specific Components */
 .katex {
-  font:
-    normal 1.05em KaTeX_Main,
-    "Times New Roman",
-    serif;
+  font: normal 1.05em KaTeX_Main, "Times New Roman", serif;
 }
 
 .box {
   padding: 24px 24px 24px 40px;
   position: relative;
   background: var(--box-bg, rgba(0, 0, 0, 0.03));
-  /* backdrop-filter: blur(10px); -> causes rendering issues in SVG foreignObject on Chromium browsers */
   border: 1px solid var(--glass-border);
   border-radius: 12px;
   overflow: hidden;
