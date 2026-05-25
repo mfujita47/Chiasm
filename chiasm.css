@@ -19,18 +19,8 @@
   --glass-border: rgba(0, 0, 0, 0.1);
 }
 
-/* 改善: Mermaidなどのサードパーティ要素を破壊しないよう、影響範囲を限定 */
 section, section div, section p, section ul, section ol, section li {
   box-sizing: border-box;
-}
-
-/* ★【重要修正】Mermaid隔離スコープ
-   Mermaidは内部ノードの座標・幅を content-box 前提で動的計算します。
-   上のグローバルな border-box 指定が干渉してレイアウトが崩壊するのを防ぐため、
-   ここですべての属性を本来の content-box に引き戻します。
-*/
-.mermaid, .mermaid * {
-  box-sizing: content-box !important;
 }
 
 section {
@@ -336,31 +326,4 @@ pre {
   font-size: 0.85em;
   background-color: #3d3d3d;
   color: white;
-}
-
-/* ==========================================================================
-   Marp公式 Mermaidレスポンス・コンテナ制御 (chiasm.css 末尾)
-   ========================================================================== */
-
-/* Marpが生成するMermaidコードブロックのラッパー */
-.marpit-mermaid,
-.language-mermaid,
-div[class*="mermaid"] {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  max-height: 280px !important; /* 2カラムの片側に綺麗に収まる最大の高さ */
-  margin: 12px auto !important;
-  background: transparent !important;
-}
-
-/* 内部のSVGを、文字を潰さずにアスペクト比を維持して綺麗にフィットさせる */
-.marpit-mermaid svg,
-.language-mermaid svg,
-div[class*="mermaid"] svg,
-svg.mermaid {
-  max-width: 100% !important;
-  max-height: 260px !important;
-  width: auto !important;
-  height: auto !important;
 }
