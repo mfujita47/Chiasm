@@ -329,3 +329,14 @@ pre {
   background-color: #3d3d3d;
   color: white;
 }
+
+/* Mermaidの描画コンテナの下部に安全な余白を作り、欠けを防止する */
+.mermaid {
+  display: block;
+  margin-bottom: 24px;
+  overflow: visible !important; /* 子要素のSVGがはみ出しても隠さない */
+}
+
+.mermaid svg {
+  max-height: 100%;
+}
