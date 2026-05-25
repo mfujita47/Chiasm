@@ -339,18 +339,28 @@ pre {
 }
 
 /* ==========================================================================
-   Mermaid レスポンシブコンテナ制御 (chiasm.css 末尾)
+   Marp公式 Mermaidレスポンス・コンテナ制御 (chiasm.css 末尾)
    ========================================================================== */
-.mermaid {
-  display: block;
-  text-align: center;
-  margin: 12px auto;
-  max-height: 280px; /* 二段組スライド内で他の要素と美しく共存できる安全な高さ */
-  overflow: visible !important;
+
+/* Marpが生成するMermaidコードブロックのラッパー */
+.marpit-mermaid,
+.language-mermaid,
+div[class*="mermaid"] {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  max-height: 280px !important; /* 2カラムの片側に綺麗に収まる最大の高さ */
+  margin: 12px auto !important;
+  background: transparent !important;
 }
 
-/* Mermaid本来の美しい等倍計算を維持したまま、完成したSVGを最大高さに合わせてマイルドに縮小 */
-.mermaid svg {
-  max-height: 280px !important;
-  width: auto !important; /* 横方向への強制的な引き伸ばしを防止 */
+/* 内部のSVGを、文字を潰さずにアスペクト比を維持して綺麗にフィットさせる */
+.marpit-mermaid svg,
+.language-mermaid svg,
+div[class*="mermaid"] svg,
+svg.mermaid {
+  max-width: 100% !important;
+  max-height: 260px !important;
+  width: auto !important;
+  height: auto !important;
 }
