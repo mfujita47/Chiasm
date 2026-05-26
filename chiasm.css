@@ -39,19 +39,21 @@ section h1, section h2, section h3, section h4, section h5, section h6, section 
 }
 
 /* Headings */
+/* Headings */
 h1:nth-of-type(1) {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 90px; /* heightからmin-heightに変更し、複数行に対応 */
-  font-size: 48px;  /* 52pxから微調整し、一般的な解像度での折り返しを抑制 */
+  min-height: 90px; /* 複数行への備えは維持 */
+  font-size: 48px;
+  line-height: 1.1; /* 明示的に縮めて、文字の持つ高さをコンパクトにする */
   color: var(--main);
   font-weight: 800;
   display: flex;
   align-items: center;
   border-bottom: solid 1.5px var(--main);
-  padding: 10px 120px 10px 32px; /* 右側にページ番号用のスペースを確保 */
+  padding: 0 120px 0 32px; /* 上下パディングを「0」に戻し、高さの上振れを防ぐ */
 }
 
 h1:nth-of-type(1)::after {
