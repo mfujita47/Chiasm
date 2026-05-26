@@ -1,20 +1,16 @@
 /* @theme chiasm */
 @import "default";
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght=400;700;800&family=BIZ+UDPGothic:wght=400;700&family=Source+Code+Pro:ital,wght=0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=BIZ+UDPGothic:wght@400;700&family=Source+Code+Pro:ital,wght=0,200..900;1,200..900&display=swap");
 
 /* Global Variables */
 :root {
-  --main: #1a365d;        /* Professional Deep Blue */
+  --main: #1a365d; /* Professional Deep Blue */
   --main-light: #2c5282;
-  --secondary: #3d3d3d;   /* Slate Gray */
-  --accent: #d69e2e;      /* Golden Accent */
+  --secondary: #3d3d3d; /* Slate Gray */
+  --accent: #d69e2e; /* Golden Accent */
   --bg: #ffffff;
   --glass-bg: rgba(255, 255, 255, 0.8);
   --glass-border: rgba(0, 0, 0, 0.1);
-
-  /* 実在するフォント指定を最優先で変数化（保守性の向上） */
-  --font-sans: "FORM UDPGothic", "BIZ UDPGothic", "Inter", sans-serif;
-  --font-mono: "UDEV Gothic NFLG", "Source Code Pro", monospace;
 }
 
 /* Base Settings */
@@ -25,11 +21,11 @@ section, section div, section p, section ul, section ol, section li {
 section {
   position: relative;
   background-color: var(--bg);
-  font-family: var(--font-sans); /* 変数から適用 */
+  font-family: "FORM UDPGothic", "BIZ UDPGothic", sans-serif; /* 元のフォント指定に復元 */
   font-size: 28px;
   line-height: 1.6;
   letter-spacing: 0.02em;
-  padding: 110px 32px 42px 32px; /* h1の複数行対応のため上部パディングをやや拡張 */
+  padding: 96px 32px 42px 32px;
 }
 
 /* Reset Margins & Shadows */
@@ -39,34 +35,37 @@ section h1, section h2, section h3, section h4, section h5, section h6, section 
 }
 
 /* Headings */
-/* Headings */
 h1:nth-of-type(1) {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 90px; /* 複数行への備えは維持 */
-  font-size: 48px;
-  line-height: 1.1; /* 明示的に縮めて、文字の持つ高さをコンパクトにする */
+  height: 90px;
+  font-size: 52px;
   color: var(--main);
   font-weight: 800;
   display: flex;
   align-items: center;
   border-bottom: solid 1.5px var(--main);
-  padding: 0 120px 0 32px; /* 上下パディングを「0」に戻し、高さの上振れを防ぐ */
+  padding: 0 32px;
 }
 
 h1:nth-of-type(1)::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   left: 0;
   width: 100%;
   border-bottom: solid 1px var(--glass-border);
 }
 
-h2 { color: var(--main); }
-h3, h4, h5, h6 { color: var(--secondary); }
+h2 {
+  color: var(--main);
+}
+
+h3, h4, h5, h6 {
+  color: var(--secondary);
+}
 
 /* Pagination */
 section::before {
@@ -106,7 +105,7 @@ a {
   color: var(--main);
   text-decoration: none;
   border-bottom: 1px solid transparent;
-  transition: color 0.2s, border-color 0.2s;
+  transition: all 0.2s;
 }
 
 a:hover {
@@ -137,7 +136,7 @@ section.twoColumns > div > * + * {
   margin-top: 16px;
 }
 
-/* Page Components (Title & SubTitle) - DRY原則に基づく集約 */
+/* Page Components (Title & SubTitle) */
 section.title,
 section.subTitle {
   background-color: var(--main);
@@ -184,7 +183,6 @@ section.subTitle h2 {
   font-size: 1.5em;
 }
 
-/* subTitleの差分のみ定義 */
 section.subTitle {
   background-color: var(--secondary);
 }
@@ -244,15 +242,17 @@ section.subTitle::after {
   display: inline-block;
   vertical-align: middle;
   background: var(--arrow-color, var(--main));
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
   margin: 0 10px;
 }
-
-.downarrow { clip-path: polygon(50% 100%, 0 0, 100% 0); }
-.uparrow   { clip-path: polygon(50% 0, 0 100%, 100% 100%); } /* rotateに頼らずclip-pathで制御 */
 
 .downarrow.accent,
 .uparrow.accent {
   --arrow-color: var(--accent);
+}
+
+.uparrow {
+  transform: rotate(180deg);
 }
 
 .tag {
@@ -268,17 +268,15 @@ section.subTitle::after {
 .main { background-color: var(--main); }
 .accent { background-color: var(--accent); }
 
-code, pre {
-  font-family: var(--font-mono); /* 変数から適用 */
-}
-
 code {
   background-color: rgba(0, 0, 0, 0.05);
   padding: 2px 6px;
   border-radius: 4px;
+  font-family: "UDEV Gothic NFLG", "Source Code Pro", monospace; /* 元のフォント指定に復元 */
 }
 
 pre {
+  font-family: "UDEV Gothic NFLG", "Source Code Pro", monospace; /* 元のフォント指定に復元 */
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 0.85em;
