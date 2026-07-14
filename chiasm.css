@@ -284,6 +284,32 @@ pre {
   color: white;
 }
 
+/* Syntax highlighting (highlight.js) tuned for the dark pre background.
+   Colors echo the chiasm palette: blue keys, gold strings, green numbers. */
+pre code { color: #e8ecf2; }
+pre code .hljs-comment,
+pre code .hljs-quote { color: #8b97a7; font-style: italic; }
+pre code .hljs-attr,
+pre code .hljs-attribute,
+pre code .hljs-name,
+pre code .hljs-selector-tag,
+pre code .hljs-title,
+pre code .hljs-section { color: #82aaff; }
+pre code .hljs-string,
+pre code .hljs-meta .hljs-string,
+pre code .hljs-regexp { color: #ecc94b; }
+pre code .hljs-number,
+pre code .hljs-literal,
+pre code .hljs-boolean { color: #9ad0a0; }
+pre code .hljs-keyword,
+pre code .hljs-built_in,
+pre code .hljs-type { color: #c792ea; }
+pre code .hljs-symbol,
+pre code .hljs-meta,
+pre code .hljs-link { color: #56b6c2; }
+pre code .hljs-bullet,
+pre code .hljs-punctuation { color: #c0c6d0; }
+
 mark {
   padding: 2px 8px;
   background-color: var(--accent);
